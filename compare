@@ -1,0 +1,65 @@
+comparing using only if
+#include<stdio.h>
+int main()
+{
+        int a,b,c;
+        printf("give three no., to compare\n");
+        scanf("%d %d %d",&a,&b,&c);
+        if (a<=b&&b<=c)
+        {
+                printf("%d is bigest",c);
+        }
+if(a>=b&&a>=c)
+{
+        printf("%d is biggest",a);
+}
+if(a<=b&&b>=c)
+{
+        printf("%d is biggest",b);
+}
+if(a==b&&b==c)
+{
+        printf("all no. have single value");
+}
+}
+
+~
+comparing using nested if
+#include<stdio.h>
+int main()
+{
+        int a,b,c;
+        printf("give three no., to compare\n");
+        scanf("%d %d %d",&a,&b,&c);
+        if (a<=b&&b<=c)
+        {
+                printf("%d is bigest",c);
+        }
+        else if(a>=b&&a>=c)
+{
+        printf("%d is biggest",a);
+}
+else if(a<=b&&b>=c)
+{
+        printf("%d is biggest",b);
+}
+else if(a==b&&b==c)
+{
+        printf("all no. have single value");
+}
+}
+using relational operator
+
+#include<stdio.h>
+int main()
+{
+        int a,b,c,g,h;
+        printf("ENTER THERRE VALUES ");
+        scanf("%d %d %d",&a,&b,&c);
+        g=a<=b?b:a;
+        h=g<=c?c:g;
+        printf("%d is biggest",h);
+}
+
+~
+

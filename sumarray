@@ -1,0 +1,47 @@
+#include<stdio.h>
+void inputarray(int *a,int *n)
+{
+        int i=0;
+        for(i=0;i<=*n-1;i++)
+        {
+                scanf("%d",&a[i]);
+        }
+}
+int sumarray(int *a,int *n)
+
+{
+        int sum=0,i=0;
+        for(i=0;i<=*n-1;i++)
+        {
+                sum=sum+(a[i]);
+        }
+        return sum;
+}
+
+void outputarray(int *a,int *n)
+{
+        int i=0;
+        for(i=0;i<=*n-1;i++)
+        {
+                printf("%d",a[i]);
+
+        }
+}
+int main()
+{
+        int n,s;
+        printf("give the no. of lements to put in");
+        scanf("%d",&n);
+        int a[n];
+        inputarray(&a[n],&n);
+        printf("\n");
+        s=sumarray(&a[n],&n);
+
+        outputarray(&a[n],&n);
+        printf("\n");
+        printf("the sum oof array elements %d",s);
+        return 0;
+}
+
+
+
